@@ -4,7 +4,7 @@ from send_email import send_email
 api_key = "7d233c34c7f744cd8f4aa2c848d22bed"
 url = "https://newsapi.org/v2/everything?q=tesla&" \
       "from=2023-11-08&sortBy=publishedAt&" \
-      "apiKey=7d233c34c7f744cd8f4aa2c848d22bed"
+      "apiKey=7d233c34c7f744cd8f4aa2c848d22bed&language=en"
 
 # Make request
 request = requests.get(url)
