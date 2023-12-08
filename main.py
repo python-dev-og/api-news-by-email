@@ -18,7 +18,8 @@ content = request.json()
 body = ""
 for article in content["articles"][:20]:
     if article["title"] is not None:
-        body = body + article["title"] + "\n" \
+        body = "Subject: Today's news" \
+               + "\n" + body + article["title"] + "\n" \
                + str(article["description"]) \
                + "\n" + article["url"] + 2*"\n"
 
